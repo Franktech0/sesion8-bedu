@@ -1,0 +1,104 @@
+.space {
+    margin: 0 auto;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 35px;
+    margin-top: 50px;
+}
+
+.space .nave-container {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 65px;
+}
+
+.space .nave-container .nave {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    animation-name: despegue, vuelo;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+
+}
+img {
+    width: 130px;
+}
+.space .nave-container2 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 0px;
+    margin-right: 100px;
+}
+.space .nave-container2 .nave2 {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    animation-name: aterrizaje, vuelo-horizontal;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+
+}
+
+@keyframes despegue {
+    from {
+        bottom: -270px;
+    }
+    to {
+        bottom: 270px;
+    }
+}
+
+
+@keyframes vuelo {
+    0% {
+        left: -50px;
+    }
+    25%{
+        left: -30px;
+    }
+    50%{
+        left: -60px;
+    }
+    75%{
+        left: -30px;
+    }
+    100%{
+        left: -30px;
+    }
+}
+@keyframes aterrizaje {
+    from {
+        bottom: -270px;
+    }
+    to {
+        bottom: 270px;
+    }
+}
+
+@keyframes vuelo-horizontal {
+    0% {
+        left: -50px;
+    }
+    25%{
+        left: -30px;
+    }
+    50%{
+        left: -60px;
+    }
+    75%{
+        left: -30px;
+    }
+    100%{
+        left: -30px;
+    }
+}
+
+
+
